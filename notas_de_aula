@@ -1,0 +1,15 @@
+Aula 1.
+1. Iniciamos o yarn - yarn init -y
+Ele criou o package.json, se quisessemos fazer manualmente seria só remover o y
+2. Instalamos o express - yarn add express
+3. Instalamos os tipos do express - yarn add @types/express -D
+O D indica ambiente de desenvolvimento
+4. Instalar o typescript com dependência de desenvolvimento - yarn add typescript -D
+5. Criar arquivo de configuração do typescript (tsconfig.json) - yarn tsc --init
+6. Definir em tsconfig.json -> strict: "false" - Eu mantive como "true"
+7. Instalar o typescript node development, pra ser um tradutor pro node do typescript - yarn add ts-node-dev -D
+8. Implementação em package.json de "scripts" 
+    -> "scripts": {
+            "dev": "ts-node-dev" src/server.ts
+        }
+9. Iniciar aplicação -> yarn dev
